@@ -36,14 +36,15 @@ class paginationViewClass extends View {
     if (curPage === 1 && numPages > 1) {
       // console.log(`there is 1 page and other pages`);
 
-      return `<button data-goto="${
+      return `
+      <button data-goto="${
         curPage + 1
       }" class="btn--inline pagination__btn--next">
       <span> Page ${curPage + 1}</span>
       <svg class="search__icon">
         <use href="${icons}#icon-arrow-right"></use>
       </svg>
-    </button>s`;
+    </button>`;
     }
 
     // last page ---
@@ -57,7 +58,7 @@ class paginationViewClass extends View {
         <use href="${icons}#icon-arrow-left"></use>
       </svg>
       <span>Page ${curPage - 1}</span>
-    </button> `;
+    </button>`;
     }
 
     //other page ---
@@ -81,11 +82,12 @@ class paginationViewClass extends View {
       <svg class="search__icon">
         <use href="${icons}#icon-arrow-right"></use>
       </svg>
-    </button> `;
+    </button>`;
     }
 
     // page 1 and there are no other pages
-    return console.log(`there is only one page`);
+    console.log(`there is only one page`);
+    return ' ';
     // ---
   }
 }
