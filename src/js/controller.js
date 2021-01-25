@@ -195,3 +195,5 @@ const init = function () {
 };
 
 init();
+
+console.log(`hey welcome to the application!`);
