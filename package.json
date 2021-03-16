@@ -1,23 +1,22 @@
 {
-  "name": "starter-2",
+  "name": "Ayo",
   "version": "1.0.0",
-  "description": "",
+  "description": "Project",
   "default": "index.html",
   "scripts": {
-    "css": "npm-run-all --parallel watch:sass start",
-    "watch:sass": "sass src/sass/main.scss style.css --watch",
-    "start": "parcel index.html",
-    "build": "parcel build index.html --dist-dir ./dist"
+    "start": "RECIPES_API_KEY=dcb59068-88fa-415d-8a6e-10d983efe1ad parcel index.html",
+    "sass": "sass --watch",
+    "build": "parcel build index.html"
   },
-  "author": "",
+  "author": "Ayo",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0-nightly.622",
+    "autoprefixer": "^10.2.4",
     "parcel": "^2.0.0-beta.1",
-    "sass": "^1.32.2"
+    "sass": "^1.26.10"
   },
   "dependencies": {
-    "core-js": "^3.8.2",
-    "fractional": "^1.0.0",
-    "regenerator-runtime": "^0.13.7"
+    "fractional": "^1.0.0"
   }
 }
